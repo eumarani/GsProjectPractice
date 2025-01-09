@@ -1,0 +1,21 @@
+#!/bin/bash
+
+backup_dir="/backup"
+source_dir="/home/user/documents"
+
+# Create a timestamp for unique backups
+timestamp=$(date +"%Y%m%d_%H%M%S")
+backup_dir_with_timestamp="$backup_dir/backup_$timestamp"
+# Ensure the backup directory exists
+mkdir -p "$backup_dir_with_timestamp"
+
+# Check if the source directory exists
+if [ -d "$source_dir" ]; then
+  # Perform the backup
+  cp -r "$source_dir"/* "$backup_dir_with_timestamp" && echo "Backup completed successfully!" || echo "Backup failed!"
+else
+  echo "Source directory '$source_dir' "$timestamp" does not exist!"
+  exit 1
+fi
+
+
