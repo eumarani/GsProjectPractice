@@ -27,8 +27,7 @@ public class ValidParanthesis {
     public static boolean valid(String s){
         Stack<Character> result=new Stack<> ();
 
-        for(int i=0;i<s.length();i++){
-            char c=s.charAt(i);
+        for(char c:s.toCharArray()){
             if(c=='(' || c=='{' || c=='['){
                 result.push(c);
 
