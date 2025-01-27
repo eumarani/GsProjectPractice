@@ -1,3 +1,5 @@
+package com.stream.practice;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.List;
@@ -37,9 +39,6 @@ class Employee{
                 '}';
     }
 }
-
-
-
 public class EmployeeDetails {
     public static void main(String[] args){
 
