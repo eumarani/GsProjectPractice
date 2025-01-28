@@ -15,7 +15,7 @@ public class Smallestaddition {
         int ssmallest=list.get(1);
         int slargest=list.get(list.size()-2);
 
-int sum=ssmallest+slargest;
+          int sum=ssmallest+slargest;
        return sum;
 
 

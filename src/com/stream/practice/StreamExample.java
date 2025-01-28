@@ -1,3 +1,5 @@
+package com.stream.practice;
+
 import java.util.*;
 import java.util.stream.Collectors;
 

@@ -1,4 +1,4 @@
-package com.excelSheet;
+package com.excelSheet.java8;
 
 import java.util.*;
 import java.util.stream.Collectors;

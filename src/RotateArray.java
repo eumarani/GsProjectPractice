@@ -36,12 +36,12 @@ public class RotateArray {
         int[] arr={1,2,3,4,5,6,7};
         int k=8;
         rotate(arr,k);
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(arr));//[7, 1, 2, 3, 4, 5, 6]
 
         int[] arr1={1,6,3,1,3,7};
         int k1=2;
-        rotate(arr1,k1);
-        System.out.println(Arrays.toString(arr1));
+        System.out.println(Arrays.toString(rotate(arr1,k1)));//[3, 7, 1, 6, 3, 1]
+       // System.out.println(Arrays.toString(arr1));
 
     }
 }
